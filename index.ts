@@ -41,3 +41,51 @@
 // }
 
 // sendNotification({ type: 'email', email: 'user@example.com' });
+
+// //===========================================================
+// 3-MASALA: Order status’ga qarab action belgilash
+// 👇 Shart:
+// Quyidagi OrderStatus enumidan foydalanib, Order statusiga qarab log chiqaradigan funksiya yoz.
+
+// enum OrderStatus {
+//   Pending = 'pending',
+//   Processing = 'processing',
+//   Delivered = 'delivered',
+//   Cancelled = 'cancelled',
+// }
+
+// interface Order {
+//   id: number;
+//   customer: string;
+//   status: OrderStatus;
+// }
+
+// // 👇 Bu yerga funksiya yozing
+// function handleOrder(order: Order): void {
+//   switch (order.status) {
+//     case OrderStatus.Pending:
+//       console.log('Buyurtma hali ko‘rib chiqilmagan');
+//       break;
+//     case OrderStatus.Delivered:
+//       console.log('Buyurtma yetkazildi');
+//       break;
+//     case OrderStatus.Cancelled:
+//       console.log('Buyurtma bekor qilindi');
+//       break;
+//     case OrderStatus.Processing:
+//       console.log('Buyurtma tayyorlanmoqda');
+//       break;
+
+//     default:
+//       throw new Error('Noto‘g‘ri buyurtma statusi');
+//   }
+// }
+
+// handleOrder({ id: 1, customer: 'Ali', status: OrderStatus.Pending });
+// // 👉 "Buyurtma hali ko‘rib chiqilmagan"
+
+// handleOrder({ id: 2, customer: 'Laylo', status: OrderStatus.Delivered });
+// // 👉 "Buyurtma yetkazildi"
+
+// handleOrder({ id: 3, customer: 'Doston', status: OrderStatus.Cancelled });
+// // 👉 "Buyurtma bekor qilindi"
