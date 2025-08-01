@@ -17,3 +17,27 @@
 // }
 
 // console.log(activeUsers(users));
+
+//==========================================
+
+// 2-MASALA: Notification’ga qarab turli xabar chiqarish
+// 👇 Shart:
+// Quyidagi Notification tipidan foydalangan holda funksiya yozing. Funksiya har xil turdagi xabarlarni qabul qiladi va qaysi kanal orqali yuborilayotganini konsolga chiqaradi.
+
+// type CustomNotification =
+//   | { type: 'email'; email: string }
+//   | { type: 'sms'; phone: string }
+//   | { type: 'push'; deviceId: string };
+
+// // 👇 Bu yerga funksiya yozing
+// function sendNotification(notification: CustomNotification): void {
+//   if (notification.type === 'email') {
+//     console.log(`Email orqali yuborilmoqda: ${notification.email}`);
+//   } else if (notification.type === 'sms') {
+//     console.log(`SMS yuborilmoqda: ${notification.phone}`);
+//   } else if (notification.type === 'push') {
+//     console.log(`Push bildirishnoma yuborilmoqda: ${notification.deviceId}`);
+//   }
+// }
+
+// sendNotification({ type: 'email', email: 'user@example.com' });
