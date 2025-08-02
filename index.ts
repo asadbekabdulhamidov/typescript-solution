@@ -89,3 +89,23 @@
 
 // handleOrder({ id: 3, customer: 'Doston', status: OrderStatus.Cancelled });
 // // 👉 "Buyurtma bekor qilindi"
+
+//================================
+
+//getFullName funksiyasini yozing
+
+// interface User {
+//   firstName: string;
+//   lastName: string;
+// }
+
+// const user: User = {
+//   firstName: 'Asadbek',
+//   lastName: 'Abdulhamidov',
+// };
+
+// function getFullName(user: User): void {
+//   console.log(user.firstName + ' ' + user.lastName);
+// }
+
+// console.log(getFullName(user)); // 👉 Asadbek Abdulhamidov
