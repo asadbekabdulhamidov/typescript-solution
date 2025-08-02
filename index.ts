@@ -133,3 +133,17 @@
 // // 👉 Sumayya, yoshi ko‘rsatilmagan
 
 //==========================================
+
+//Product obyektini faqat o‘qish mumkin bo‘lishi kerak
+// interface Product {
+//   readonly id: number;
+//   name: string;
+// }
+
+// function updateProductName(product: Product, newName: string): Product {
+//   return { ...product, name: newName };
+// }
+
+// console.log(updateProductName({ id: 1, name: 'Asadbek' }, 'Sumayya'));
+
+//================================================
