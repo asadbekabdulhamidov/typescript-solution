@@ -109,3 +109,27 @@
 // }
 
 // console.log(getFullName(user)); // 👉 Asadbek Abdulhamidov
+//================================================
+
+// getUserInfo funksiyasini yozing
+
+// interface User {
+//   name: string;
+//   age?: number; // optional
+// }
+
+// function getUserInfo(user: User): string {
+//   if ('age' in user) {
+//     return `${user.name}, ${user.age} yoshda`;
+//   } else {
+//     return `${user.name}, yoshi ko'rsatilmagan`;
+//   }
+// }
+
+// console.log(getUserInfo({ name: 'Asadbek', age: 24 }));
+// // 👉 Asadbek, 24 yoshda
+
+// console.log(getUserInfo({ name: 'Sumayya' }));
+// // 👉 Sumayya, yoshi ko‘rsatilmagan
+
+//==========================================
