@@ -117,3 +117,39 @@
 // }
 // console.log(updateProductName({ id: 1, name: 'Asadbek' }, 'Sumayya'));
 //================================================
+// Quyidagi massivdan berilgan id ga ega mahsulotni o‘chiradigan funksiya yozing.
+// Muhim: massivni mutatsiya qilmasin (yangi array qaytarsin).
+// type Product = {
+//   readonly id: number;
+//   name: string;
+// };
+// const products: Product[] = [
+//   { id: 1, name: 'Olma' },
+//   { id: 2, name: 'Banan' },
+//   { id: 3, name: 'Anor' },
+// ];
+// function deleteProductById(products: Product[], id: number): Product[] {
+//   // yo'nalish: filter ishlating
+//   return products.filter((prod) => prod.id !== id);
+// }
+// const afterDelete = deleteProductById(products, 2);
+// console.log(afterDelete);
+//============================================================
+// Yangi mahsulot qo‘shish (CREATE)
+// Shart:
+// Quyidagi massivga yangi mahsulot qo‘shadigan funksiya yozing.
+// Qoida:
+// id avtomatik ravishda massivdagi eng katta id + 1 bo‘lishi kerak.
+// Eski massivni o‘zgartirmang (yangi array qaytaring).
+// interface Product {
+//   id: number;
+//   name: string;
+// }
+// const products: Product[] = [
+//   { id: 1, name: 'Olma' },
+//   { id: 2, name: 'Banan' },
+// ];
+// function addProduct(products: Product[], name: string): Product[] {
+//   return [...products, { id: (products.at(-1)?.id ?? 0) + 1, name }];
+// }
+// console.log(addProduct(products, 'Anor'));
