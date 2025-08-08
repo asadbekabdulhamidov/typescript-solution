@@ -147,3 +147,27 @@
 // console.log(updateProductName({ id: 1, name: 'Asadbek' }, 'Sumayya'));
 
 //================================================
+
+// Quyidagi massivdan berilgan id ga ega mahsulotni o‘chiradigan funksiya yozing.
+// Muhim: massivni mutatsiya qilmasin (yangi array qaytarsin).
+
+// type Product = {
+//   readonly id: number;
+//   name: string;
+// };
+
+// const products: Product[] = [
+//   { id: 1, name: 'Olma' },
+//   { id: 2, name: 'Banan' },
+//   { id: 3, name: 'Anor' },
+// ];
+
+// function deleteProductById(products: Product[], id: number): Product[] {
+//   // yo'nalish: filter ishlating
+//   return products.filter((prod) => prod.id !== id);
+// }
+
+// const afterDelete = deleteProductById(products, 2);
+// console.log(afterDelete);
+
+//============================================================
