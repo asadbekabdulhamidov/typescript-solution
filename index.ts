@@ -253,8 +253,38 @@
 // Keyin funksiya yoz: tuple qabul qilsin va "Asadbek is 25 years old" ko‘rinishida string qaytarsin.
 // 👉 Funksiya nomi uchun formatStudentInfo ni tavsiya qilaman.
 
-function formatStudentInfo(student: [string, number]): string {
-  return `${student[0]} is ${student[1]} years old`;
-}
+// function formatStudentInfo(student: [string, number]): string {
+//   return `${student[0]} is ${student[1]} years old`;
+// }
 
-console.log(formatStudentInfo(['asadbek', 25]));
+// console.log(formatStudentInfo(['asadbek', 25]));
+
+//==================================================================
+
+// Interface yoz:
+// Product (id: number, name: string, price: number)
+// Funksiya yoz:
+// Parametr sifatida Product[] massivini qabul qilsin.
+// Eng qimmat mahsulotni qaytarsin.
+// 👉 Funksiya nomi sifatida getMostExpensiveProduct ni tavsiya qilaman.
+
+// interface Product {
+//   id: number;
+//   name: string;
+//   price: number;
+// }
+
+// const products: Product[] = [
+//   { id: 1, name: 'Laptop', price: 1200 },
+//   { id: 2, name: 'Phone', price: 800 },
+//   { id: 3, name: 'Headphones', price: 1500 },
+//   { id: 4, name: 'Monitor', price: 300 },
+// ];
+
+// function getMostExpensiveProduct(products: Product[]): Product {
+//   return products.sort((a, b) => b.price - a.price)[0];
+// }
+
+// console.log(getMostExpensiveProduct(products));
+
+//================================================
