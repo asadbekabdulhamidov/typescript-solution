@@ -167,3 +167,17 @@
 //   return num ** 2;
 // }
 // console.log(getPow(2));
+//========================================
+// Funksiya yoz:
+// Parametr sifatida number | string qabul qilsin (union type).
+// Agar parametr number bo‘lsa — uning kvadratini qaytarsin.
+// Agar parametr string bo‘lsa — uzunligini qaytarsin.
+// function getLengthOrSquare(val: string | number): number {
+//   if (typeof val === 'string') {
+//     return val.length;
+//   } else {
+//     return val ** 2;
+//   }
+// }
+// console.log(getLengthOrSquare('salom'));
+// console.log(getLengthOrSquare(3));
