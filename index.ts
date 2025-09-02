@@ -233,3 +233,14 @@
 
 // console.log(getLengthOrSquare('salom'));
 // console.log(getLengthOrSquare(3));
+
+//==================================
+
+// Parametr sifatida string[] qabul qilsin.
+// Har bir elementni katta harf qilib qaytarsin.
+
+// function toUpperCaseArray(val: string[]): string[] {
+//   return val.map((item) => item.toUpperCase());
+// }
+
+// console.log(toUpperCaseArray(['a', 'b', 's']));
