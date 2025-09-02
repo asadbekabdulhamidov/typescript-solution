@@ -205,3 +205,14 @@
 // console.log(username, age, isActive);
 
 //======================================
+
+// Funksiya yoz:
+// Parametr sifatida faqat number qabul qilsin.
+// Parametrning kvadratini qaytarsin.
+// 👉 Sen yozib ko‘r, keyin muhokama qilamiz.
+
+// function getPow(num: number): number {
+//   return num ** 2;
+// }
+
+// console.log(getPow(2));
