@@ -154,7 +154,8 @@
 // }
 // console.log(addProduct(products, 'Anor'));
 //=============================================
-let username = 'Asadbek';
-let age = 25;
-let isActive = true;
-console.log(username, age, isActive);
+// let username: string = 'Asadbek';
+// let age: number = 25;
+// let isActive: boolean = true;
+// console.log(username, age, isActive);
+//======================================
