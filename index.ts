@@ -244,3 +244,17 @@
 // }
 
 // console.log(toUpperCaseArray(['a', 'b', 's']));
+
+//======================================================
+
+// Tuple tuz:
+// [string, number] shaklida bo‘lsin.
+// Masalan, bir o‘quvchining ["Asadbek", 25] kabi ma’lumotlarini saqlasin.
+// Keyin funksiya yoz: tuple qabul qilsin va "Asadbek is 25 years old" ko‘rinishida string qaytarsin.
+// 👉 Funksiya nomi uchun formatStudentInfo ni tavsiya qilaman.
+
+function formatStudentInfo(student: [string, number]): string {
+  return `${student[0]} is ${student[1]} years old`;
+}
+
+console.log(formatStudentInfo(['asadbek', 25]));
