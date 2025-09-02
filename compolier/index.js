@@ -153,3 +153,8 @@
 //   return [...products, { id: (products.at(-1)?.id ?? 0) + 1, name }];
 // }
 // console.log(addProduct(products, 'Anor'));
+//=============================================
+let username = 'Asadbek';
+let age = 25;
+let isActive = true;
+console.log(username, age, isActive);

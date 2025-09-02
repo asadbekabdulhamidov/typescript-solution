@@ -193,3 +193,15 @@
 // }
 
 // console.log(addProduct(products, 'Anor'));
+
+//=============================================
+
+// let username: string = 'Asadbek';
+
+// let age: number = 25;
+
+// let isActive: boolean = true;
+
+// console.log(username, age, isActive);
+
+//======================================
