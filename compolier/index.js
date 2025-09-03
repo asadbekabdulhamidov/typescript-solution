@@ -241,3 +241,23 @@
 //   name: 'Asadbek',
 //   role: 'viewer',
 // };
+//====================================
+// interface User {
+//   id: number;
+//   name: string;
+// }
+// type Role = 'admin' | 'editor' | 'viewer';
+// type AdminUser =
+//   | (User & { role: 'admin'; permissions: string[] })
+//   | (User & { role: 'editor' | 'view'; permissions?: never });
+// const superAdmin: AdminUser = {
+//   id: 1,
+//   name: 'Abdulhamid',
+//   role: 'admin',
+//   permissions: ['asad', 'doston', 'hamid'],
+// };
+// const editor: AdminUser = {
+//   id: 1,
+//   name: 'Abdulhamid',
+//   role: 'editor',
+// };
