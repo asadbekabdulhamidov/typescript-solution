@@ -366,3 +366,26 @@
 //   return [...products, newProd];
 // }
 // console.log(addProduct(products, newProduct));
+
+//==============================================================
+// (Read)
+// getProductById(products, id) funksiyasini yozing:
+// Massiv ichidan id bo‘yicha mahsulotni topib qaytarsin.
+// Agar mahsulot topilmasa, undefined qaytarsin.
+
+// interface Product {
+//   id: number;
+//   name: string;
+//   price: number;
+// }
+
+// const products: Product[] = [
+//   { id: 1, name: 'Phone', price: 1000 },
+//   { id: 2, name: 'Laptop', price: 3000 },
+// ];
+
+// function getProductById(products: Product[], id: number): Product | undefined {
+//   return products.find((product) => product.id === id);
+// }
+
+// console.log(getProductById(products, 3));
