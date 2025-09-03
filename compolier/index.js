@@ -301,3 +301,27 @@
 //   return products.find((product) => product.id === id);
 // }
 // console.log(getProductById(products, 3));
+//=============================================
+// updateProduct(products, updatedProduct) funksiyasini yozing:
+// updatedProduct.id bo‘yicha massivdagi mahsulotni yangilasin.
+// Agar id topilsa → yangilangan mahsulot bilan almashtirsin.
+// Agar topilmasa → massivni o‘z holicha qaytarsin.
+// interface Product {
+//   id: number;
+//   name: string;
+//   price: number;
+// }
+// const products: Product[] = [
+//   { id: 1, name: 'Phone', price: 1000 },
+//   { id: 2, name: 'Laptop', price: 3000 },
+// ];
+// const updated: Product = { id: 4, name: 'Gaming Laptop', price: 3500 };
+// function updateProduct(
+//   products: Product[],
+//   updatedProduct: Product
+// ): Product[] {
+//   return products.map((prod) =>
+//     prod.id === updatedProduct.id ? updatedProduct : prod
+//   );
+// }
+// console.log(updateProduct(products, updated));
