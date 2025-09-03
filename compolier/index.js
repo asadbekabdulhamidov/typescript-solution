@@ -325,3 +325,21 @@
 //   );
 // }
 // console.log(updateProduct(products, updated));
+//==============================================================
+// 📝 4-masala (Delete)
+// deleteProduct(products, id) funksiyasini yozing:
+// Berilgan id bo‘yicha mahsulotni o‘chirib tashlasin.
+// O‘chirilgan mahsulotsiz massivni qaytarsin.
+// interface Product {
+//   id: number;
+//   name: string;
+//   price: number;
+// }
+// const products: Product[] = [
+//   { id: 1, name: 'Phone', price: 1000 },
+//   { id: 2, name: 'Laptop', price: 3000 },
+// ];
+// function deleteProduct(products: Product[], id: number): Product[] {
+//   return products.filter((item) => item.id !== id);
+// }
+// console.log(deleteProduct(products, 2));
