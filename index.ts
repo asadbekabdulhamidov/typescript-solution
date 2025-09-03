@@ -339,3 +339,30 @@
 //   name: 'Abdulhamid',
 //   role: 'editor',
 // };
+
+//================================================
+// Product degan interface tuz:
+// id: number
+// name: string
+// price: number
+// products nomli massiv bor.
+// addProduct(products, newProduct) funksiyasini yozing:
+// newProduct ni massivga qo‘shib, yangilangan massivni qaytarishi kerak.
+
+// interface Product {
+//   id: number;
+//   name: string;
+//   price: number;
+// }
+
+// const products: Product[] = [
+//   { id: 1, name: 'Phone', price: 1000 },
+//   { id: 2, name: 'Laptop', price: 3000 },
+// ];
+
+// const newProduct: Product = { id: 3, name: 'Tablet', price: 1500 };
+
+// function addProduct(products: Product[], newProd: Product): Product[] {
+//   return [...products, newProd];
+// }
+// console.log(addProduct(products, newProduct));
