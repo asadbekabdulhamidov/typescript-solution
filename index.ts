@@ -282,9 +282,34 @@
 // ];
 
 // function getMostExpensiveProduct(products: Product[]): Product {
-//   return products.sort((a, b) => b.price - a.price)[0];
+//   return [...products].sort((a, b) => b.price - a.price)[0];
 // }
 
 // console.log(getMostExpensiveProduct(products));
 
 //================================================
+
+// interface User yarating:
+// id: number
+// name: string
+// type Role yarating:
+//
+// AdminUser nomli yangi tur yarating, u User va Role ni birlashtirsin.
+// const superAdmin obyektini yarating, id, name, va role maydonlariga qiymat bering.
+
+// interface User {
+//   id: number;
+//   name: string;
+// }
+
+// type Role = 'admin' | 'editor' | 'viewer';
+
+// type AdminUser = User & {
+//   role: Role;
+// };
+
+// const superAdmin: AdminUser = {
+//   id: 1,
+//   name: 'Asadbek',
+//   role: 'viewer',
+// };
