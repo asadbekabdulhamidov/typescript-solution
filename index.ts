@@ -444,3 +444,35 @@
 // }
 
 // console.log(deleteProduct(products, 2));
+//=================================================
+// deleteProduct nomli funksiya yoz.
+// Uchta shart qo‘shamiz:
+// Parametrlar:
+// products → mahsulotlar ro‘yxati
+// id → o‘chirilishi kerak bo‘lgan mahsulot IDsi
+// Agar ID mavjud bo‘lsa — o‘sha mahsulotni o‘chirib, yangi massiv qaytarsin.
+// Agar ID mavjud bo‘lmasa — massivni o‘zgarishsiz qaytarsin.
+// Agar massiv bo‘sh bo‘lsa — to‘g‘ridan-to‘g‘ri bo‘sh massivni qaytarsin.
+
+interface Product {
+  id: number;
+  name: string;
+  price: number;
+}
+
+let products: Product[] = [
+  { id: 1, name: 'Book', price: 20 },
+  { id: 2, name: 'Pen', price: 5 },
+];
+
+function deleteProduct(products: Product[], id: number): Product[] | [] {
+  if (!products.length) return [];
+
+  if (products.some((item) => item.id === id)) {
+    return products.filter((item) => item.id !== id);
+  } else {
+    return products;
+  }
+}
+
+console.log(deleteProduct(products, 2));
