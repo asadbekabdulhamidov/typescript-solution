@@ -428,3 +428,14 @@
 // //   return [...names, newName];
 // // }
 // console.log(addName(names, 'Bekzod'));
+//===============================================
+// nksiya findName yozing:
+// Parametrlar: names: string[], search: string
+// Natija: agar ism mavjud bo‘lsa — o‘sha ismni qaytarsin,
+// mavjud bo‘lmasa — undefined qaytarsin.
+// const users: string[] = ['Ali', 'Vali', 'Asadbek'];
+// function findName(users: string[], name: string): string | undefined {
+//   return users.find((item) => item === name);
+// }
+// console.log(findName(users, 'Vali')); // "Vali"
+// console.log(findName(users, 'Madina'));
