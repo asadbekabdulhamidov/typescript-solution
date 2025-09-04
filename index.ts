@@ -454,25 +454,67 @@
 // Agar ID mavjud bo‘lmasa — massivni o‘zgarishsiz qaytarsin.
 // Agar massiv bo‘sh bo‘lsa — to‘g‘ridan-to‘g‘ri bo‘sh massivni qaytarsin.
 
-interface Product {
-  id: number;
-  name: string;
-  price: number;
-}
+// interface Product {
+//   id: number;
+//   name: string;
+//   price: number;
+// }
 
-let products: Product[] = [
-  { id: 1, name: 'Book', price: 20 },
-  { id: 2, name: 'Pen', price: 5 },
-];
+// let products: Product[] = [
+//   { id: 1, name: 'Book', price: 20 },
+//   { id: 2, name: 'Pen', price: 5 },
+// ];
 
-function deleteProduct(products: Product[], id: number): Product[] | [] {
-  if (!products.length) return [];
+// function deleteProduct(products: Product[], id: number): Product[] | [] {
+//   if (!products.length) return [];
 
-  if (products.some((item) => item.id === id)) {
-    return products.filter((item) => item.id !== id);
-  } else {
-    return products;
-  }
-}
+//   if (products.some((item) => item.id === id)) {
+//     return products.filter((item) => item.id !== id);
+//   } else {
+//     return products;
+//   }
+// }
 
-console.log(deleteProduct(products, 2));
+// console.log(deleteProduct(products, 2));
+
+//===============================================
+// let numbers: readonly number[] = [1, 2, 3, 4, 5, 5, 6];
+// console.log(numbers.length, numbers[0]);
+
+//====================================
+// Array – union bilan
+
+// (string | number)[] tipidagi massiv yarating va ichiga "Ali", 25, "Vali", 30 ni qo‘ying.
+// So‘ng, faqat sonlarni ajratib yangi massiv qaytaring.
+
+// let namesNumber: (string | number)[] = ['Ali', 25, 'Vali', 30];
+// let nums: number[] = namesNumber.filter((item) => typeof item === 'number');
+
+// console.log(nums);
+
+//================================
+// Tuple – oddiy
+
+// [string, number] tipidagi user yarating, masalan ["Ali", 25].
+// Keyin user[0] va user[1] ni konsolga chiqaring.
+
+// let user: [string, number] = ['Ali', 25];
+
+// console.log(user);
+//==============================================
+// Tuple – optional
+
+// [string, number?, boolean?] tipidagi person yarating.
+// Unga uch xil qiymat bering:
+
+// Faqat ism
+
+// Ism + yosh
+
+// Ism + yosh + boolean
+
+// let person: [string, number?, boolean?];
+
+// person = ['Asadbek'];
+// person = ['Asadbek', 25];
+// person = ['Asadbek', 25, true];
