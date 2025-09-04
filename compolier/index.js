@@ -439,3 +439,12 @@
 // }
 // console.log(findName(users, 'Vali')); // "Vali"
 // console.log(findName(users, 'Madina'));
+//=====================================================
+// const users: string[] = ['Ali', 'Vali', 'Asadbek'];
+// function deleteName(users: string[], name: string): string[] {
+//   return users.filter((item) => item !== name);
+// }
+// console.log(deleteName(users, 'Vali'));
+// // ["Ali", "Asadbek"]
+// console.log(deleteName(users, 'Madina'));
+// // ["Ali", "Vali", "Asadbek"]
