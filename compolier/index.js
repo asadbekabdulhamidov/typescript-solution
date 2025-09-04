@@ -415,3 +415,16 @@
 // }
 // console.log(filterAdults(people));
 //====================================================
+// String arrayga yangi ism qo‘shish
+// 👉 Funksiya addName yozing:
+// Parametrlar: names: string[], newName: string
+// Natija: yangi ism qo‘shilgan string[] qaytsin.
+// let names: Array<string> = ['ali', 'vali'];
+// function addName(names: string[], newName: string): string[] {
+//   names.push(newName);
+//   return names;
+// }
+// // function addName(names: string[], newName: string): string[] {
+// //   return [...names, newName];
+// // }
+// console.log(addName(names, 'Bekzod'));
