@@ -583,3 +583,39 @@
 
 // console.log(deleteName(users, 'Madina'));
 // // ["Ali", "Vali", "Asadbek"]
+//========================================================
+// addPerson → massivga yangi odam qo‘shadi.
+// findPersonById → id bo‘yicha odamni topadi, agar bo‘lmasa undefined.
+// updatePersonAge → id bo‘yicha odamning yoshini yangilaydi.
+// deletePerson → id bo‘yicha odamni o‘chiradi.
+// interface Person {
+//   id: number;
+//   name: string;
+//   age: number;
+// }
+
+// let people: Person[] = [
+//   { id: 1, name: 'Ali', age: 17 },
+//   { id: 2, name: 'Vali', age: 20 },
+//   { id: 3, name: 'Asadbek', age: 25 },
+// ];
+
+// function addPerson(people: Person[], user: Person): Person[] {
+//   return [...people, user];
+// }
+
+// function findPersonById(people: Person[], id: number): Person | undefined {
+//   return people.find((item) => item.id === id);
+// }
+// function updatePersonAge(people: Person[], id: number, age: number): Person[] {
+//   return people.map((item) => (item.id === id ? { ...item, age: age } : item));
+// }
+// function deletePerson(people: Person[], id: number): Person[] {
+//   return people.filter((item) => item.id !== id);
+// }
+
+// console.log(findPersonById(people, 2));
+// { id: 2, name: "Vali", age: 20 }
+
+// console.log(updatePersonAge(people, 3, 26));
+// Asadbekning yoshi 26 bo‘lib yangilanadi
