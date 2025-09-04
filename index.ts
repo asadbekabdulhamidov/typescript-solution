@@ -518,3 +518,26 @@
 // person = ['Asadbek'];
 // person = ['Asadbek', 25];
 // person = ['Asadbek', 25, true];
+
+//=================================================
+// filterAdults nomli funksiya yozing. U:
+// Parametr sifatida Person[] qabul qiladi.
+// Faqat 18 yoshdan kattalarni qaytaradi.
+
+// interface Person {
+//   name: string;
+//   age: number;
+// }
+
+// const people: Person[] = [
+//   { name: 'Ali', age: 17 },
+//   { name: 'Vali', age: 20 },
+//   { name: 'Asadbek', age: 25 },
+// ];
+
+// function filterAdults(people: Person[]): Person[] {
+//   return people.filter((item) => item.age >= 18);
+// }
+// console.log(filterAdults(people));
+
+//====================================================
