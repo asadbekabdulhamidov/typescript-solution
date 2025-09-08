@@ -522,3 +522,19 @@
 //   return [...prop].sort((a, b) => b.price - a.price)[0];
 // }
 // console.log(getMostExpensiveProduct(products));
+//====================================================
+// enum DeviceType {
+//   Mobile = 'Mobile',
+//   Tablet = 'Tablet',
+//   Laptop = 'Laptop',
+// }
+// function parseDevice(input: unknown): DeviceType | undefined {
+//   if (typeof input === 'string') {
+//     // narrowing: endi input string ekanini bilamiz
+//     if (input === 'Mobile') return DeviceType.Mobile;
+//     if (input === 'Tablet') return DeviceType.Tablet;
+//     if (input === 'Laptop') return DeviceType.Laptop;
+//   }
+//   return undefined;
+// }
+// console.log(parseDevice('Mobile'));
