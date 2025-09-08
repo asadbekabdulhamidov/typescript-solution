@@ -646,3 +646,31 @@
 // console.log(getMaxNumber(numbers));
 
 //=====================================
+
+// getMostExpensiveProduct funksiyasi
+// Avval Product interfeysini yarat.id: number
+// name: string
+// price: number
+// Funksiya parametr sifatida Product[] (mahsulotlar ro‘yxati) qabul qiladi.
+// Eng qimmat mahsulotni (price bo‘yicha) qaytaradi.
+// Agar ro‘yxat bo‘sh bo‘lsa, undefined qaytaradi.
+
+// interface Product {
+//   id: number;
+//   name: string;
+//   price: number;
+// }
+
+// const products: Product[] = [
+//   { id: 1, name: 'Laptop', price: 1200 },
+//   { id: 2, name: 'Phone', price: 800 },
+//   { id: 3, name: 'Tablet', price: 600 },
+//   { id: 4, name: 'Monitor', price: 400 },
+// ];
+
+// function getMostExpensiveProduct(prop: Product[]): Product | undefined {
+//   if (!prop.length) return undefined;
+//   return [...prop].sort((a, b) => b.price - a.price)[0];
+// }
+
+// console.log(getMostExpensiveProduct(products));
