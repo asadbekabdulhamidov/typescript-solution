@@ -628,3 +628,21 @@
 // }
 
 // console.log(addNumbers(1, 2));
+
+//==================================================
+// Masala 2: getMaxNumber funksiyasi
+// Parametr sifatida number[] (sonlardan iborat massiv) qabul qiladi.
+// Massiv ichidagi eng katta sonni qaytaradi.
+// Agar massiv bo‘sh bo‘lsa, undefined qaytarsin.
+// TypeScript’da tur belgilash shart.
+
+// let numbers: number[] = [1, 2, 3, 4, 5, 6, 6, 5, 2, 2, 4, 45];
+// function getMaxNumber(prop: number[]): number | undefined {
+//   if (!prop.length) return undefined;
+//   return Math.max(...prop);
+// }
+
+// console.log(getMaxNumber([]));
+// console.log(getMaxNumber(numbers));
+
+//=====================================
