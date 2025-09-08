@@ -479,3 +479,9 @@
 // { id: 2, name: "Vali", age: 20 }
 // console.log(updatePersonAge(people, 3, 26));
 // Asadbekning yoshi 26 bo‘lib yangilanadi
+//===========================================================
+// addNumbers
+function addNumbers(num1, num2) {
+    return num1 + num2;
+}
+console.log(addNumbers(1, 2));

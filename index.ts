@@ -619,3 +619,12 @@
 
 // console.log(updatePersonAge(people, 3, 26));
 // Asadbekning yoshi 26 bo‘lib yangilanadi
+
+//===========================================================
+// addNumbers
+
+// function addNumbers(num1: number, num2: number): number {
+//   return num1 + num2;
+// }
+
+// console.log(addNumbers(1, 2));
