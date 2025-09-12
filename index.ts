@@ -793,3 +793,20 @@
 // console.log(processInput('hello')); // "HELLO"
 // console.log(processInput(true)); // "Yes"
 // console.log(processInput(false)); // "No"
+
+//============================================================
+
+// formatId funksiyasi yozing. Parametr number | string.
+// Agar number bo‘lsa, "ID-<number>" formatida qaytarsin.
+// Agar string bo‘lsa, "USER-<string>" formatida qaytarsin.
+
+// function formatId(id: number | string): string {
+//   if (typeof id === 'number') {
+//     return `ID-${id}`;
+//   } else {
+//     return `USER-${id}`;
+//   }
+// }
+
+// console.log(formatId(42)); // "ID-42"
+// console.log(formatId('asad')); // "USER-asad"
