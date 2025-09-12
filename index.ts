@@ -836,3 +836,25 @@
 // console.log(formatValue('asadbek')); // "ASADBEK"
 // console.log(formatValue(123)); // "Number: 123"
 // console.log(formatValue(new Date('2025-09-12'))); // "Date: 2025-09-12"
+
+//===================================================================
+// Sen getProp nomli funksiya yozishing kerak:
+// Funksiya 2 ta parametr qabul qiladi:
+// obj → obyekt (typeof product)
+// key → obyekt ichidagi faqat mavjud kalit (keyof typeof product)
+// Funksiya obj[key] qiymatini qaytarishi kerak.
+// const product = {
+//   id: 1,
+//   name: 'Laptop',
+//   price: 1500,
+//   inStock: true,
+// };
+// type User = keyof typeof product;
+
+// function getProp(obj: typeof product, key: keyof typeof product) {
+//   return obj[key];
+// }
+
+// console.log(getProp(product, 'name')); // "Laptop"
+// console.log(getProp(product, 'price')); // 1500
+// console.log(getProp(product, 'inStock')); // true
