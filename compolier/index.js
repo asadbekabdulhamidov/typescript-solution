@@ -666,3 +666,22 @@
 // console.log(getProp(product, 'name')); // "Laptop"
 // console.log(getProp(product, 'price')); // 1500
 // console.log(getProp(product, 'inStock')); // true
+//==========================================================
+// Delete
+// 👉 deleteProduct(products, id) funksiyasini yoz:
+// id bo‘yicha mos mahsulotni o‘chirib yuborsin
+// Agar topilmasa, ro‘yxat o‘zgarmasdan qaytsin
+// type Product = {
+//   id: number;
+//   name: string;
+//   price: number;
+// };
+// let products: Product[] = [
+//   { id: 1, name: 'Laptop', price: 1500 },
+//   { id: 2, name: 'Phone', price: 800 },
+//   { id: 3, name: 'Tablet', price: 600 },
+// ];
+// function deleteProduct(products: Product[], id: number): Product[] {
+//   return products.filter((prod) => prod.id !== id);
+// }
+// console.log(deleteProduct(products, 2));
