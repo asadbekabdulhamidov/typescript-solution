@@ -602,3 +602,14 @@
 // console.log(printLength('Asadbek')); // 7
 // console.log(printLength(5)); // 25
 // console.log(printLength(null)); // "No value"
+//=============================================================
+// processInput funksiyasi yozing. Parametr string | boolean.
+// Agar string bo‘lsa, uni katta harflarga o‘tkazib qaytaring.
+// Agar boolean bo‘lsa, true bo‘lsa "Yes", false bo‘lsa "No" deb qaytaring.
+// function processInput(input: string | boolean): string {
+//   if (typeof input === 'string') return input.toUpperCase();
+//   return input ? 'Yes' : 'No';
+// }
+// console.log(processInput('hello')); // "HELLO"
+// console.log(processInput(true)); // "Yes"
+// console.log(processInput(false)); // "No"
