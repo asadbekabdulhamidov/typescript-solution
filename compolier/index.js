@@ -626,3 +626,24 @@
 // }
 // console.log(formatId(42)); // "ID-42"
 // console.log(formatId('asad')); // "USER-asad"
+//============================================================
+// formatValue funksiyasi yozing. Parametr string | number | Date.
+// Agar string bo‘lsa → uni katta harfga o‘tkazib qaytaring.
+// Agar number bo‘lsa → "Number: <value>" deb qaytaring.
+// Agar Date bo‘lsa → "Date: <yyyy-mm-dd>" formatida qaytaring
+// let date = new Date('2025-09-12');
+// console.log(date instanceof Date);
+// function formatValue(value: string | number | Date): string {
+//   // narrowing ishlatish kerak
+//   if (typeof value === 'string') {
+//     return value.toUpperCase();
+//   } else if (typeof value === 'number') {
+//     return `Number: ${value}`;
+//   } else if (value instanceof Date) {
+//     return `Date: ${value.toISOString().split('T')[0]}`;
+//   }
+//   return 'unknown';
+// }
+// console.log(formatValue('asadbek')); // "ASADBEK"
+// console.log(formatValue(123)); // "Number: 123"
+// console.log(formatValue(new Date('2025-09-12'))); // "Date: 2025-09-12"
