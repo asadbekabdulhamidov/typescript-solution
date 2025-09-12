@@ -694,3 +694,87 @@
 // }
 
 // console.log(parseDevice('Mobile'));
+
+//=========================================================
+// type User = { id: number; name: string; roles: string[] };
+
+// // 🔹 Vazifa:
+// // Faqat "id" va "name" propertylarini oladigan yangi tur (`UserPreview`) yarating.
+
+// // type UserPreview = {
+// //   id: number;
+// //   name: string;
+// // };
+
+// type UserPreview = Pick<User, 'id' | 'name'>;
+
+//====================================================
+
+// 🔹 Vazifa:
+// getConfig(key: string): string | number | undefined
+// funksiyasini yozing.
+// U Config ichidan qiymatni qaytarishi kerak, agar yo‘q bo‘lsa undefined.
+
+// type Config = Record<string, string | number>;
+
+// const config: Config = {
+//   host: 'localhost',
+//   port: 3000,
+//   username: 'asadbek',
+// };
+
+// function getConfig(key: keyof Config): string | number | undefined {
+//   return config[key]; // Agar mavjud bo‘lmasa, undefined qaytadi
+// }
+
+// // ✅ Sinab ko‘ramiz
+// console.log(getConfig('host')); // "localhost"
+// console.log(getConfig('port')); // 3000
+// console.log(getConfig('password')); // undefined
+
+//=========================================================
+
+// 🔹 Shart:
+// Product tipini yozing (id: number, name: string, price: number).
+// 1) getMostExpensive(products: Product[]): Product
+// funksiyasini yozing.
+// 2) Agar products bo‘sh bo‘lsa, undefined qaytarsin.
+
+// type Product = {
+//   id: number;
+//   name: string;
+//   price: number;
+// };
+// const products: Product[] = [
+//   { id: 1, name: 'Phone', price: 500 },
+//   { id: 2, name: 'Laptop', price: 1500 },
+//   { id: 3, name: 'Tablet', price: 800 },
+// ];
+
+// console.log(getMostExpensive({ id: 2, name: 'Laptop', price: 1500 }));
+// // { id: 2, name: "Laptop", price: 1500 }
+
+// console.log(getMostExpensive([]));
+// // undefined
+
+// function getMostExpensive(products: Product[]): Product | undefined {
+//     return
+// }
+
+//=============================================
+
+// Funksiya printLength yozing. Parametr string | number | null. Agar string bo‘lsa, uzunligini (length) chiqaring. Agar number bo‘lsa, raqamni kvadratga ko‘paytirib chiqaring. Agar null bo‘lsa "No value" deb chiqaring.
+
+// function printLength(value: string | number | null): string | number {
+//   if (typeof value === 'string') {
+//     return value.length;
+//   } else if (typeof value === 'number') {
+//     return value ** 2;
+//   } else {
+//     return 'no value';
+//   }
+// }
+
+// console.log(printLength('Asadbek')); // 7
+// console.log(printLength(5)); // 25
+// console.log(printLength(null)); // "No value"
