@@ -882,3 +882,65 @@
 // }
 
 // console.log(deleteProduct(products, 2));
+
+//===============================================================================
+
+type Product = {
+  id: number;
+  name: string;
+  price: number;
+};
+
+type Store = {
+  id: number;
+  name: string;
+  products: Product[];
+};
+
+let stores: Store[] = [
+  {
+    id: 1,
+    name: 'Tech Store',
+    products: [
+      { id: 1, name: 'Laptop', price: 1500 },
+      { id: 2, name: 'Phone', price: 800 },
+    ],
+  },
+  {
+    id: 2,
+    name: 'Gadget Hub',
+    products: [
+      { id: 3, name: 'Tablet', price: 600 },
+      { id: 4, name: 'Smartwatch', price: 300 },
+    ],
+  },
+];
+
+// Mashq: Update
+// 👉 Funksiya yoz:
+// updateProductPrice(stores, storeId, productId, newPrice)
+// Berilgan storeId ichidan productIdni topsin
+// Shu mahsulotning price qiymatini newPrice ga o‘zgartirsin
+// Agar topilmasa → massiv o‘zgarmasdan qaytsin
+
+function updateProductPrice(
+  stores: Store[],
+  storeId: number | string,
+  productId: number | string,
+  newPrice: number
+) {
+  return stores.map((store) => {
+    if (store.id === storeId) {
+      return {
+        ...store,
+        products: store.products.map((prod) =>
+          prod.id === productId ? { ...prod, price: newPrice } : prod
+        ),
+      };
+    } else {
+      return store;
+    }
+  });
+}
+
+console.log(updateProductPrice(stores, 1, 2, 1000));
