@@ -36,17 +36,25 @@ let stores = [
 // Berilgan storeId ichidan productIdni topsin
 // Shu mahsulotning price qiymatini newPrice ga o‘zgartirsin
 // Agar topilmasa → massiv o‘zgarmasdan qaytsin
-function updateProductPrice(stores, storeId, productId, newPrice) {
-    return stores.map((store) => {
-        if (store.id === storeId) {
-            return {
-                ...store,
-                products: store.products.map((prod) => prod.id === productId ? { ...prod, price: newPrice } : prod),
-            };
-        }
-        else {
-            return store;
-        }
-    });
-}
-console.log(updateProductPrice(stores, 1, 2, 1000));
+// function updateProductPrice(
+//   stores: Store[],
+//   storeId: number | string,
+//   productId: number | string,
+//   newPrice: number
+// ) {
+//   return stores.map((store) => {
+//     if (store.id === storeId) {
+//       return {
+//         ...store,
+//         products: store.products.map((prod) =>
+//           prod.id === productId ? { ...prod, price: newPrice } : prod
+//         ),
+//       };
+//     } else {
+//       return store;
+//     }
+//   });
+// }
+// console.log(updateProductPrice(stores, 1, 2, 1000));
+// import { ism } from './data';
+// console.log(ism);
