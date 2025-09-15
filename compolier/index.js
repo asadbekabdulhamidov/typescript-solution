@@ -754,10 +754,34 @@
 //=======================================================================
 // any tipidan aniq tipga o‘tkazish
 // Backend’dan quyidagi JSON kelyapti:
-const data = {
-    id: 1,
-    name: 'iPhone',
-    price: 1200,
-};
-const product = data; // assertion yoz
-console.log(product.name.toUpperCase()); // IPHONE
+// const data: any = {
+//   id: 1,
+//   name: 'iPhone',
+//   price: 1200,
+// };
+// interface Product {
+//   id: number;
+//   name: string;
+//   price: number;
+// }
+// const product = <Product>data; // assertion yoz
+// console.log(product.name.toUpperCase()); // IPHONE
+//===========================================Double assertion
+// Ba’zida noto‘g‘ri tipni to‘g‘rilash uchun double assertion qilinadi.
+// Masalan, string tipini numberga o‘tkazib bo‘lmaydi. Lekin unknown orqali o‘tkazsa bo‘ladi.
+// const str: unknown = '123';
+// // str ni number sifatida assert qilib, unga + 10 qo‘sh
+// function getNumber(value: unknown): number {
+//   return (value as unknown as number) + 10;
+// }
+// console.log(getNumber(str));
+//========================================================
+// 1-mashq (eng oddiy)
+// 👉 Generic function yozing: identity nomli funksiya bitta qiymat qabul qiladi va uni o‘sha-o‘zini qaytaradi.
+// Funksiya string bilan ham, number bilan ham ishlashi kerak.
+// Genericdan foydalaning (<T>).
+function indentity(prop) {
+    return prop;
+}
+console.log(indentity('salom'));
+console.log(indentity(1));
