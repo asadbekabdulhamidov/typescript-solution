@@ -1034,3 +1034,19 @@
 // console.log(getLength([1, 2, 3]));     // 3
 // console.log(getLength({ length: 10 })); // 10
 // // console.log(getLength(100)); ❌ numberda length yo‘q
+
+//======================================================================
+// Generics yordamida reverser funksiyasini yozing.
+// ✅ Funksiya array yoki string qabul qiladi va uni teskari qilib qaytaradi:
+
+// function reverse(value: string): string;
+// function reverse<T>(value: T[]): T[];
+// function reverse(value: any): any {
+//   if (typeof value === 'string') {
+//     return value.split('').reverse().join('');
+//   }
+//   return [...value].reverse();
+// }
+
+// console.log(reverse('hello')); // "olleh"
+// console.log(reverse([1, 2, 3]));
