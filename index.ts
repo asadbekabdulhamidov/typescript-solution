@@ -1019,3 +1019,18 @@
 
 // console.log(getFirstElement<string>(['1', '23']));
 // console.log(getFirstElement<number | boolean>([false, 1, 2, 3, 4, 4, 5, true]));
+
+//=======================================================================
+// 3-mashq (constraint bilan)
+// Funksiya yozing: getLength.
+// U faqat length xususiyatiga ega bo‘lgan qiymatlarni qabul qilsin.
+// Generic bilan extends { length: number } ishlating.
+// Natija sifatida length qiymatini qaytarsin.
+// function getLength<T extends { length: number }>(prop: T): number {
+//   return prop.length;
+// }
+
+// console.log(getLength("sam"));         // 3
+// console.log(getLength([1, 2, 3]));     // 3
+// console.log(getLength({ length: 10 })); // 10
+// // console.log(getLength(100)); ❌ numberda length yo‘q
