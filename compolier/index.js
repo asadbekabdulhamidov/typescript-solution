@@ -64,3 +64,4 @@ function getStringLength(value) {
     return value.length;
 }
 console.log(getStringLength('Asadbek')); // 7
+//======================================================
