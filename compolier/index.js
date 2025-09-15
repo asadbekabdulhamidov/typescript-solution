@@ -785,3 +785,12 @@
 // }
 // console.log(indentity<string>('salom'));
 // console.log(indentity<number>(1));
+//============================================================
+// Generic function yozing: getFirstElement.
+// Funksiya array qabul qiladi va birinchi elementini qaytaradi.
+// Genericdan foydalaning, shunda funksiya istalgan tipdagi array bilan ishlaydi (string[], number[], boolean[]...).
+// function getFirstElement<T>(prop: T[]): T {
+//   return prop[0];
+// }
+// console.log(getFirstElement<string>(['1', '23']));
+// console.log(getFirstElement<number | boolean>([false, 1, 2, 3, 4, 4, 5, true]));
