@@ -780,8 +780,8 @@
 // 👉 Generic function yozing: identity nomli funksiya bitta qiymat qabul qiladi va uni o‘sha-o‘zini qaytaradi.
 // Funksiya string bilan ham, number bilan ham ishlashi kerak.
 // Genericdan foydalaning (<T>).
-function indentity(prop) {
-    return prop;
-}
-console.log(indentity('salom'));
-console.log(indentity(1));
+// function indentity<T>(prop: T): T {
+//   return prop;
+// }
+// console.log(indentity<string>('salom'));
+// console.log(indentity<number>(1));
