@@ -948,3 +948,13 @@ let stores: Store[] = [
 // import { ism } from './data';
 
 // console.log(ism);
+//==========================================
+// Senga unknown tipidagi qiymat keladi. Uni string deb tasdiqlab (assert) uzunligini qaytar.
+
+function getStringLength(value: unknown): number {
+  return (value as string).length;
+}
+
+console.log(getStringLength('Asadbek')); // 7
+
+//======================================================
