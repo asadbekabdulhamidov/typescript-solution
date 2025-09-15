@@ -885,36 +885,36 @@
 
 //===============================================================================
 
-type Product = {
-  id: number;
-  name: string;
-  price: number;
-};
+// type Product = {
+//   id: number;
+//   name: string;
+//   price: number;
+// };
 
-type Store = {
-  id: number;
-  name: string;
-  products: Product[];
-};
+// type Store = {
+//   id: number;
+//   name: string;
+//   products: Product[];
+// };
 
-let stores: Store[] = [
-  {
-    id: 1,
-    name: 'Tech Store',
-    products: [
-      { id: 1, name: 'Laptop', price: 1500 },
-      { id: 2, name: 'Phone', price: 800 },
-    ],
-  },
-  {
-    id: 2,
-    name: 'Gadget Hub',
-    products: [
-      { id: 3, name: 'Tablet', price: 600 },
-      { id: 4, name: 'Smartwatch', price: 300 },
-    ],
-  },
-];
+// let stores: Store[] = [
+//   {
+//     id: 1,
+//     name: 'Tech Store',
+//     products: [
+//       { id: 1, name: 'Laptop', price: 1500 },
+//       { id: 2, name: 'Phone', price: 800 },
+//     ],
+//   },
+//   {
+//     id: 2,
+//     name: 'Gadget Hub',
+//     products: [
+//       { id: 3, name: 'Tablet', price: 600 },
+//       { id: 4, name: 'Smartwatch', price: 300 },
+//     ],
+//   },
+// ];
 
 // Mashq: Update
 // 👉 Funksiya yoz:
@@ -960,3 +960,22 @@ let stores: Store[] = [
 // const input = document.getElementById('username') as HTMLInputElement;
 // console.log(input.value);
 // agar <input id="username" value="Asadbek"> bo‘lsa => "Asadbek"
+
+//=======================================================================
+// any tipidan aniq tipga o‘tkazish
+
+// Backend’dan quyidagi JSON kelyapti:
+const data: any = {
+  id: 1,
+  name: 'iPhone',
+  price: 1200,
+};
+
+interface Product {
+  id: number;
+  name: string;
+  price: number;
+}
+
+const product = <Product>data; // assertion yoz
+console.log(product.name.toUpperCase()); // IPHONE
