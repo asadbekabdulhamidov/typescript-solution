@@ -60,8 +60,13 @@ let stores = [
 // console.log(ism);
 //==========================================
 // Senga unknown tipidagi qiymat keladi. Uni string deb tasdiqlab (assert) uzunligini qaytar.
-function getStringLength(value) {
-    return value.length;
-}
-console.log(getStringLength('Asadbek')); // 7
+// function getStringLength(value: unknown): number {
+//   return (value as string).length;
+// }
+// console.log(getStringLength('Asadbek')); // 7
 //======================================================
+// Sen document.getElementById ishlatsang, TypeScript HTMLElement | null qaytaradi.
+// Mashq: ID-si "username" bo‘lgan input elementni olib, uni HTMLInputElement deb tasdiqlab qiymatini yoz.
+// const input = document.getElementById('username') as HTMLInputElement;
+// console.log(input.value);
+// agar <input id="username" value="Asadbek"> bo‘lsa => "Asadbek"
