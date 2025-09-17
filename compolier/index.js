@@ -820,3 +820,31 @@
 // }
 // console.log(reverse('hello')); // "olleh"
 // console.log(reverse([1, 2, 3]));
+// function mergeObjects<T, U>(obj1: T, obj2: U): T & U {
+//   // code yozing
+//   return { ...obj1, ...obj2 };
+// }
+// const user = { name: 'Asadbek' };
+// const info = { age: 25, isAdmin: true };
+// const result = mergeObjects(user, info);
+// console.log(result);
+// // { name: "Asadbek", age: 25, isAdmin: true }
+//==========================================================
+// function filterArray<T>(
+//   arr: T[],
+//   callback: (value: T, index: number, array: T[]) => boolean
+// ): T[] {
+//   const result: T[] = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (callback(arr[i], i, arr)) {
+//       result.push(arr[i]);
+//     }
+//   }
+//   return result;
+// }
+// const numbers = [1, 2, 3, 4, 5];
+// const evens = filterArray<number>(numbers, (num) => num % 2 === 0);
+// console.log(evens); // [2, 4]
+// const words = ["apple", "banana", "avocado"];
+// const aWords = filterArray(words, (w) => w.startsWith("a"));
+// console.log(aWords); // ["apple", "avocado"]
