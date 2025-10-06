@@ -1084,3 +1084,27 @@
 // const words = ["apple", "banana", "avocado"];
 // const aWords = filterArray(words, (w) => w.startsWith("a"));
 // console.log(aWords); // ["apple", "avocado"]
+
+//====================================================
+
+// Shart:
+// getFullName degan funksiya yozing. U firstName va lastName xususiyatlariga ega obyektni qabul qiladi va to‘liq ismni (ism + familiya) sifatida string qaytaradi.
+// Agar lastName mavjud bo‘lmasa, faqat firstName ni qaytarsin.
+// ✨ Talablar:
+// Typeni alohida interface yoki type sifatida yozing.
+// Funksiya TypeScript tip tizimidan foydalansin.
+// Misollarni konsolda tekshiring.
+
+// interface FullName {
+//   firstName: string;
+//   lastName?: string;
+// }
+
+// function getFullName(obj: FullName): string {
+//   return obj.lastName ? `${obj.firstName} ${obj.lastName}` : obj.firstName;
+// }
+
+// console.log(getFullName({ firstName: 'Asadbek', lastName: 'Abdulhamidov' }));
+// console.log(getFullName({ firstName: 'Jasur' }));
+
+//===================================================
