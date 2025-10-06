@@ -1108,3 +1108,21 @@
 // console.log(getFullName({ firstName: 'Jasur' }));
 
 //===================================================
+
+// interface User {
+//   id: number;
+//   name: string;
+//   isActive: boolean;
+// }
+
+// function getActiveUsers(users: User[]): User[] {
+//   return users.filter((user) => user.isActive);
+// }
+
+// const users = [
+//   { id: 1, name: 'Asadbek', isActive: true },
+//   { id: 2, name: 'Jasur', isActive: false },
+//   { id: 3, name: 'Malika', isActive: true },
+// ];
+
+// console.log(getActiveUsers(users));
