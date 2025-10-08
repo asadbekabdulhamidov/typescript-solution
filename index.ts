@@ -1148,3 +1148,21 @@
 // console.log(filterActiveProducts(products));
 
 //====================================================
+
+// printId nomli funksiya yozing.
+// U parametr sifatida number | string turidagi id qabul qiladi.
+// Agar id son bo‘lsa — "Your numeric ID is: <id>" deb qaytarsin,
+// agar matn bo‘lsa — "Your string ID is: <id>" deb qaytarsin.
+// 👀 Bu yerda siz union type (number | string) va type narrowing (typeof orqali tur aniqlash) ishlatishingiz k
+
+// type printIdProp = number | string;
+
+// function printId(prop: printIdProp): string {
+//   if (typeof prop === 'number') {
+//     return `Your numeric ID is: ${prop}`;
+//   } else {
+//     return `Your string ID is: ${prop}`;
+//   }
+// }
+
+//======================================
