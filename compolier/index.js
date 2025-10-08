@@ -880,3 +880,20 @@
 //   { id: 3, name: 'Malika', isActive: true },
 // ];
 // console.log(getActiveUsers(users));
+//=====================================
+// interface Product {
+//   id: number;
+//   name: string;
+//   price: number;
+//   isActive: boolean;
+// }
+// const products: Product[] = [
+//   { id: 1, name: 'Phone', price: 1200, isActive: true },
+//   { id: 2, name: 'TV', price: 2300, isActive: false },
+//   { id: 3, name: 'Laptop', price: 3200, isActive: true },
+// ];
+// function filterActiveProducts(products: Product[]): Product[] {
+//   return products.filter((item) => item.isActive);
+// }
+// console.log(filterActiveProducts(products));
+//====================================================
