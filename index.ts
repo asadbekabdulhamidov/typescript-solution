@@ -1166,3 +1166,26 @@
 // }
 
 //======================================
+// getPropertyValue nomli funksiya yozing.
+// U ikkita parametr qabul qiladi:
+// obj — istalgan obyekt
+// key — shu obyektning kalitlaridan biri
+// Funksiya obj ichidan key bo‘yicha qiymatni qaytarsin.
+// 🎯 Shart: key qiymati faqat obyektning mavjud kalitlaridan biri bo‘lishi kerak (ya’ni keyof bilan yozilsin).
+// interface obj {
+//   id: number;
+//   name: string;
+//   age: number;
+// }
+// const user: obj = {
+//   id: 1,
+//   name: 'Asadbek',
+//   age: 24,
+// };
+
+// function getPropertyValue<T, K extends keyof T>(obj: T, key: K) {
+//   return obj[key];
+// }
+
+// console.log(getPropertyValue(user, 'name')); // "Asadbek"
+// console.log(getPropertyValue(user, 'age')); // 24
