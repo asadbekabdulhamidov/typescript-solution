@@ -932,3 +932,24 @@
 // }
 // console.log(getPropertyValue(user, 'name')); // "Asadbek"
 // console.log(getPropertyValue(user, 'age')); // 24
+//=====================================================================
+// calculateDiscount(product: Product): number nomli funksiya yozing.
+// Agar discount mavjud bo‘lsa, narxdan shu foizni chegirib, natijani qaytarsin.
+// Agar discount berilmagan bo‘lsa, oddiy narxni o‘zini qaytarsin.
+// interface Product {
+//   id: number;
+//   name: string;
+//   price: number;
+//   discount?: number; // optional
+// }
+// const phone = { id: 1, name: 'Phone', price: 1000, discount: 10 };
+// const tv = { id: 2, name: 'TV', price: 1500 };
+// function calculateDiscount(product: Product): number {
+//   if (!product['discount']) {
+//     return product.price;
+//   } else {
+//     return product.price - (product.price / 100) * product.discount;
+//   }
+// }
+// console.log(calculateDiscount(phone)); // 900
+// console.log(calculateDiscount(tv)); // 1500
