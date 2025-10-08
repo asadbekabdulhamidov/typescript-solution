@@ -953,3 +953,4 @@
 // }
 // console.log(calculateDiscount(phone)); // 900
 // console.log(calculateDiscount(tv)); // 1500
+//====================================================
