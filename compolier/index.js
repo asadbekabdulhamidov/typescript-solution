@@ -979,10 +979,15 @@
 // value: T[K] — o‘sha kalitga mos qiymat turi
 // Funksiya immutably ishlasin: yangi obyekt qaytarsin, objni o‘zgartirmasin.
 // Qaytadigan natija tipi: T (lekin qiymati yangilangan holatda).
-function setPropertyValue(obj, key, value) {
-    return { ...obj, [key]: value };
-}
-const u1 = { id: 1, name: 'Asadbek', isActive: true };
-const u2 = setPropertyValue(u1, 'name', 'Abdulhamidov');
-const u3 = setPropertyValue(u2, 'isActive', false);
-const u4 = setPropertyValue(u3, 'age', 25);
+// function setPropertyValue<T, K extends keyof T>(
+//   obj: T,
+//   key: K,
+//   value: T[K]
+// ): T {
+//   return { ...obj, [key]: value };
+// }
+// type User = { id: number; name: string; age?: number; isActive: boolean };
+// const u1: User = { id: 1, name: 'Asadbek', isActive: true };
+// const u2 = setPropertyValue(u1, 'name', 'Abdulhamidov');
+// const u3 = setPropertyValue(u2, 'isActive', false);
+// const u4 = setPropertyValue(u3, 'age', 25);
