@@ -954,3 +954,18 @@
 // console.log(calculateDiscount(phone)); // 900
 // console.log(calculateDiscount(tv)); // 1500
 //====================================================
+// Masala 1: getPropertyValue<T, K extends keyof T>
+// Sizga shunday generic function kerakki:
+// obj — istalgan obyekt
+// key — faqat o‘sha obyekt ichidagi property nomlaridan biri bo‘lishi kerak
+// Funksiya — o‘sha property qiymatini qaytarsin
+// Sizdan talab:
+// Funksiya generic bo‘lsin (<T, K extends keyof T>).
+// Typing qat’iy nazorat qilsin (faqat mavjud keylarni qabul qilsin).
+// Natija — property qiymati turiga mos bo‘lsin (T[K]).
+// const user = { id: 1, name: 'Asadbek', age: 24 };
+// function getPropertyValue<T, K extends keyof T>(obj: T, key: K): T[K] {
+//   return obj[key];
+// }
+// console.log(getPropertyValue(user, 'name')); // "Asadbek"
+// console.log(getPropertyValue(user, 'age')); // 24
