@@ -969,3 +969,20 @@
 // }
 // console.log(getPropertyValue(user, 'name')); // "Asadbek"
 // console.log(getPropertyValue(user, 'age')); // 24
+//==========================================================
+// Masala 2: setPropertyValue<T, K extends keyof T>
+// Vazifa:
+// Quyidagi shartlarga mos generic funksiya yozing:
+// Parametrlar:
+// obj: T — kiruvchi obyekt
+// key: K — faqat obj ichidagi mavjud kalitlardan biri
+// value: T[K] — o‘sha kalitga mos qiymat turi
+// Funksiya immutably ishlasin: yangi obyekt qaytarsin, objni o‘zgartirmasin.
+// Qaytadigan natija tipi: T (lekin qiymati yangilangan holatda).
+function setPropertyValue(obj, key, value) {
+    return { ...obj, [key]: value };
+}
+const u1 = { id: 1, name: 'Asadbek', isActive: true };
+const u2 = setPropertyValue(u1, 'name', 'Abdulhamidov');
+const u3 = setPropertyValue(u2, 'isActive', false);
+const u4 = setPropertyValue(u3, 'age', 25);
